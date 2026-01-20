@@ -1,0 +1,14 @@
+{
+	"app":{
+		"mode":"release",
+		"ip_mask":"192.168"
+	},
+	"dbs":{
+		"demo":{"proto":"mysql","conn":"{TEST_MYSQL_USER}:{TEST_MYSQL_PWD}@@tcp({TEST_MYSQL_HOST}:3306)/demotest?charset=utf8mb4&parseTime=true&loc=Local","max_open":10,"max_idle":10,"life_time":100}
+	},
+    "servers":{
+		"apiserver":{
+			"config":{"addr":":8083","status":"start"}
+		}
+    }
+}
